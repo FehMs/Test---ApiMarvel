@@ -21,11 +21,11 @@ Desenvolver uma aplicação de listagem e detalhe de personagens de quadrinhos.
 
 #### Requisitos funcionais
 - Página de listagem de personagens (home):
-  - Exibir os 20 primeiros resultados da API;
-  - Permitir ordenação por nome do personagem;
-  - Permitir filtrar por nome, pelo campo de busca;
-  - Permitir mostrar apenas os personagens favoritos;
-  - Permitir o usuário favoritar/desfavoritar até 5 personagens;
+  - Exibir os 20 primeiros resultados da API; check
+  - Permitir ordenação por nome do personagem; check
+  - Permitir filtrar por nome, pelo campo de busca; check
+  - Permitir mostrar apenas os personagens favoritos; check
+  - Permitir o usuário favoritar/desfavoritar até 5 personagens; check
 - Página de detalhe do personagem:
   - Exibir dados do personagem;
   - Exibir últimos 10 quadrinhos lançados deste personagem (onSaleDate);
