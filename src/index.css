@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+header{
+  background-color: rgb(77, 0, 0);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  padding: 20px;
+  background-color: rgb(51, 51, 51);
+}
+
+.card {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 7px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 250px;
+  overflow: hidden;
+
+
+}
+
+.card-image {
+  width: 90%;
+  height: 290px;
+  max-height: 100%;
+  border-radius: 7px;
+}
+
+.search-bar{
+  background-color: white;
+  max-width: 300px;
+  max-height: 45px;
+  justify-content: space-between;
+  gap: 13px;
+  padding-right: 13px;
+  border-radius: 7px;
+}
+
+.search-input {
+  padding: 13px;
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 7px;
+}
+
+.icon-lupa{
+  position: relative;
+  top: 5px;
+}
+
+.filtros {
+  padding: 20px;
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: end;
+
+}
+
+.button-filtro{
+  background: none;
+  border: none; 
+}
+
+.seta {
+  transform: rotate(45deg);
+}
+
+
