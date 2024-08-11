@@ -7,190 +7,160 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
 /* GERAL */
 
-* {
-  padding: 0;
-  margin: 0;
+*{
+  padding: 0px;
+  margin: 0px;
 }
 
 .App {
-  padding: 0px 50px;
-}
-
-@media (min-width: 768px) {
-  .App {
-    padding: 0px 150px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .App {
-    padding: 0px 250px;
-  }
+  padding: 0px 250px 0px 250px;
 }
 
 /* HEADER */
 
-header {
-  height: auto;
+header{
+  height: 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin: 50px 0px;
+  margin: 100px 0px 0px 0px;
 }
 
-header img {
-  max-width: 100%;
-  height: auto;
-}
-
-header h2 {
-  text-align: center;
-}
-
-header p {
-  text-align: center;
-  max-width: 90%;
-  margin: 10px auto;
-}
 
 /* SEARCH BAR */
 
-.search-container {
-  margin-top: 30px;
+.search-container{
+  margin-top: 50px;
 }
 
-.search-bar {
+.search-bar{
   background-color: #FDECEC;
   display: flex;
   align-items: center;
-  width: 100%;
-  max-width: 600px;
-  height: 45px;
-  padding: 0px 13px;
+  width: 700px;
+  height: 55px;
+  padding: 0px 13px 0px 13px;
   border-radius: 50px;
 }
 
 .search-input {
   background-color: #FDECEC;
   color: #FF1510;
-  padding: 10px;
+  padding: 13px;
   border: none;
   outline: none;
   border-radius: 50px;
-  width: 100%;
 }
 
 /* CARD */
 
 .cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
   justify-items: center;
   padding: 20px;
+
 }
 
 .card {
   border-radius: 7px;
-  height: 300px;
+  height: 350px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  max-width: 200px;
+  width: 230px;
 }
+
 
 .card-image {
   width: 90%;
-  height: 150px;
+  height: 200px;
   max-height: 100%;
 }
 
-.card-info {
+
+.card-info{
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 200px;
 }
 
 /* FILTROS */
 
+
 .filtros-container {
   padding: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: rgb(194, 194, 194);
   font-size: 15px;
+  
 }
 
-@media (min-width: 768px) {
-  .filtros-container {
-    flex-direction: row;
-  }
-}
-
-.filtros-content {
+.filtros-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
 }
 
-.icon-filtro {
-  width: 10%;
+
+.icon-filtro{
+  width: 12%;
   position: relative;
   top: 5px;
   margin: 5px 5px 0px 0px;
 }
 
-.icon-toogle {
-  width: 15%;
+.icon-toogle{
+  width: 20%;
   position: relative;
   top: 8px;
 }
 
-.icon-heroi {
+.icon-heroi{
   position: relative;
   top: 8px;
 }
 
-.button-filtro-Order {
-  background: none;
-  border: none;
-  color: #FF1510;
-  font-weight: 700;
-  width: 100%;
-  max-width: 200px;
-  text-align: left;
-}
 
-.button-filtro {
+.button-filtro-Order{
   background: none;
-  border: none;
+  border: none; 
   color: #FF1510;
   font-weight: 700;
-  width: 100%;
-  max-width: 200px;
-  text-align: left;
+  width: 200px;
+}
+.button-filtro{
+  background: none;
+  border: none; 
+  color: #FF1510;
+  font-weight: 700;
 }
 
 /* FAVORITAR */
+
 
 .favoritar {
   background: none;
   border: none;
 }
-
 .favorito {
   background: none;
   border: none;
 }
 
-/* MODAL */
+/* MODEL */
+
 
 .modal-overlay {
   position: fixed;
@@ -208,10 +178,8 @@ header p {
   background-color: rgb(51, 51, 51);
   padding: 20px;
   border-radius: 8px;
-  width: 90%;
-  max-width: 400px;
-  height: 80%;
-  max-height: 700px;
+  width: 400px;
+  height: 700px;
   overflow-y: auto;
   position: relative;
 }
@@ -241,16 +209,13 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* SCROLLBAR HIDE */
-
-::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar{
+  scrollbar-width: none;
 }
-
-/* FOOTER */
 
 footer {
   background-color: red;
   height: 80px;
   width: 100%;
+  
 }
