@@ -1,11 +1,10 @@
 # Frontend Challenge
 
+## ` Como iniciar: `
+#### `npm install`
+#### `npm start`
 
-### `npm install`
-### `npm start`
-
-## `Atenção`
-## `A API demora um pouco para renderizar`
+## `Atenção: A API demora um pouco para renderizar`
 
 
 
