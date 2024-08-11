@@ -1,4 +1,3 @@
-
 import axios from "axios";
 import md5 from "md5";
 
@@ -15,7 +14,6 @@ export const fetchCharacters = async () => {
         ts,
         apikey: publicKey,
         hash,
-
       },
     });
 
@@ -24,7 +22,24 @@ export const fetchCharacters = async () => {
     console.error("Error fetching data from Marvel API", error);
     return [];
   }
+};
 
-  
+export const fetchCharacterById = async (id) => {
+  const ts = Date.now();
+  const hash = md5(ts + privateKey + publicKey);
 
+  try {
+    const response = await axios.get(`http://gateway.marvel.com/v1/public/characters/${id}`, {
+      params: {
+        ts,
+        apikey: publicKey,
+        hash,
+      },
+    });
+
+    return response.data.data.results[0];
+  } catch (error) {
+    console.error(`Error fetching character with ID ${id} from Marvel API`, error);
+    return null;
+  }
 };

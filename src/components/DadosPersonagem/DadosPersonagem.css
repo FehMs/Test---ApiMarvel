@@ -1,0 +1,81 @@
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+
+.dados-container{
+    background-color: #E7F6E7;
+    width: 100%;
+    height: 100%;
+}
+
+.dados-container-personagem{
+    width: 300px;
+}
+
+.dados-container-personagem h3{
+    margin-top: 20px;
+}
+
+.descricao {
+    width: 250px;
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.dados-header{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 40px 0px 0px 40px;
+    margin: 0px 0px 100px 0px;
+}
+
+.personagem-img img{
+    width: 60%;
+}
+
+
+.dados-header > img{
+    width: 300px;
+    margin-right: 100px;
+}
+
+.search-bar-dados{
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 55px;
+    padding: 0px 13px 0px 13px;
+    border-radius: 50px;
+  }
+
+  .search-input-dados {
+    background-color: #ffffff;
+    color: #FF1510;
+    padding: 13px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+  }
+
+  .personagem-dados {
+    padding: 40px 40px 40px 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .dados-quadrinhos{
+    display: flex;
+    margin: 20px 20px 20px 0px;
+  }
+
+  .ultimos {
+    margin-top: 20px;
+  }

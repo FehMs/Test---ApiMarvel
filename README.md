@@ -4,7 +4,8 @@
 ### `npm install`
 ### `npm start`
 
-
+## `Atenção`
+## `A API demora um pouco para renderizar`
 
 
 
